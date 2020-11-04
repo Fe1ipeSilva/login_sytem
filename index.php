@@ -33,7 +33,7 @@
         //verificar se está vazio
         if(!empty($email) && !empty($senha)) 
         {
-            $u->connect("epiz_26862343_system_login","sql213.epizy.com","epiz_26862343","r2kJPesIPW");
+            $u->connect("DBNAME","HOST","USER","PASSWORD");
             if($u->msgError == "")
             {
                 if($u->login($email, $senha))
